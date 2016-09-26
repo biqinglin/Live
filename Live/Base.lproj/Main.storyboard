@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gav-9p-0dh">
+                                <rect key="frame" x="127" y="120" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.64705882349999999" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UQf-bh-PN8"/>
+                                    <constraint firstAttribute="width" constant="120" id="vkb-SV-rDp"/>
+                                </constraints>
+                                <state key="normal" title="我要开直播">
+                                    <color key="titleColor" red="0.0" green="0.42352941179999998" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startLive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bho-54-e5g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iz-xV-ekV">
+                                <rect key="frame" x="127" y="190" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.64705882349999999" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hH7-v2-on0"/>
+                                    <constraint firstAttribute="width" constant="120" id="ozE-Cw-PBa"/>
+                                </constraints>
+                                <state key="normal" title="我要看直播">
+                                    <color key="titleColor" red="0.0" green="0.42352941179999998" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="watchLive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aty-hn-pmM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4iz-xV-ekV" firstAttribute="centerX" secondItem="Gav-9p-0dh" secondAttribute="centerX" id="CAV-M9-PI0"/>
+                            <constraint firstItem="Gav-9p-0dh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="duW-rA-qQb"/>
+                            <constraint firstItem="Gav-9p-0dh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="la1-GM-bnc"/>
+                            <constraint firstItem="4iz-xV-ekV" firstAttribute="top" secondItem="Gav-9p-0dh" secondAttribute="bottom" constant="30" id="nd4-mg-IW1"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

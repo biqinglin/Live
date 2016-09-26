@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartLiveController">
+            <connections>
+                <outlet property="livingView" destination="93o-gy-enG" id="3g9-4q-mDH"/>
+                <outlet property="startButton" destination="4jE-VD-rcJ" id="ytJ-3X-CVQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93o-gy-enG">
+                    <rect key="frame" x="62" y="315" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO8-wA-GXs">
+                    <rect key="frame" x="325" y="30" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Nzq-L4-NRe"/>
+                        <constraint firstAttribute="height" constant="40" id="yvC-KI-SOC"/>
+                    </constraints>
+                    <state key="normal" image="talk_close_40x40_"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="YBW-e9-Tsa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jE-VD-rcJ">
+                    <rect key="frame" x="30" y="607" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.64705882349999999" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="q3D-Cm-yL1"/>
+                    </constraints>
+                    <state key="normal" title="开启直播">
+                        <color key="titleColor" red="0.0" green="0.42352941179999998" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startLive:" destination="-1" eventType="touchUpInside" id="Qfk-OM-Bhf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS1-h3-aat">
+                    <rect key="frame" x="255" y="30" width="40" height="40"/>
+                    <state key="normal" image="camera_change_40x40_"/>
+                    <connections>
+                        <action selector="changeCapture:" destination="-1" eventType="touchUpInside" id="Dqv-FM-VcI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4jE-VD-rcJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="6a8-ya-qmK"/>
+                <constraint firstItem="93o-gy-enG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tgl-oT-0G4"/>
+                <constraint firstItem="93o-gy-enG" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="VWD-wW-4h3"/>
+                <constraint firstItem="vO8-wA-GXs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Wzq-9x-AV1"/>
+                <constraint firstItem="93o-gy-enG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Ylo-UY-Eui"/>
+                <constraint firstItem="vO8-wA-GXs" firstAttribute="leading" secondItem="gS1-h3-aat" secondAttribute="trailing" constant="30" id="b14-NJ-HfN"/>
+                <constraint firstAttribute="bottom" secondItem="4jE-VD-rcJ" secondAttribute="bottom" constant="20" id="cHe-eb-9x6"/>
+                <constraint firstAttribute="trailing" secondItem="vO8-wA-GXs" secondAttribute="trailing" constant="10" id="dkk-kz-2PJ"/>
+                <constraint firstItem="gS1-h3-aat" firstAttribute="height" secondItem="vO8-wA-GXs" secondAttribute="height" id="jAJ-G7-ih1"/>
+                <constraint firstItem="gS1-h3-aat" firstAttribute="width" secondItem="vO8-wA-GXs" secondAttribute="width" id="lgI-nf-cxi"/>
+                <constraint firstItem="gS1-h3-aat" firstAttribute="top" secondItem="vO8-wA-GXs" secondAttribute="top" id="wBy-50-Qzl"/>
+                <constraint firstAttribute="trailing" secondItem="4jE-VD-rcJ" secondAttribute="trailing" constant="30" id="wbb-E7-BHF"/>
+                <constraint firstItem="93o-gy-enG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zaE-7e-x73"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_change_40x40_" width="40" height="40"/>
+        <image name="talk_close_40x40_" width="40" height="40"/>
+    </resources>
+</document>
